@@ -1,0 +1,103 @@
+body{
+	background-color: #B7B7B7;;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0px;
+}
+
+.header, .aside, .footer{
+	width: 100%;
+	position: relative;
+	background: #073763;
+	text-align: center;
+	color: white;
+	height: 70px;
+	display: flex;
+	span{
+		display: flow-root;
+    	margin: auto;
+		font-weight: bold;
+		font-size: 35px;
+	}
+}
+
+.aside{
+	position: relative;
+    background: #244E13;
+    z-index: 99;
+}
+.footer{
+	background: #660000;
+}
+
+.wrapper{
+	width: 100%;
+    position: relative;
+    height: auto;
+    z-index: 99;
+	div{
+		background: #2E2E2E;
+		display: flex;
+		color: white;
+		font-size: 20px;
+		float: left;
+		margin: 1.25%;
+		span{
+			display: flow-root;
+    		margin: auto;
+    		font-weight: bold;
+			font-size: 35px;
+		}
+		&.item-1, &.item-4{
+			width: 27%;
+			min-height: 375px;
+			height: 44%;
+		}
+		&.item-2, &.item-5{
+			width: 68%;
+			min-height: 150px;
+			height: 20%;
+		}
+		&.item-3{
+			width: 38%;
+			min-height: 200px;
+			height: 22%;
+		}
+	}
+	div:nth-child(even) {
+		float: right;
+	}
+}
+
+@media screen and (min-width: 601px){
+  .aside{
+  	width: 25%;
+  	float: left;
+  	min-height: 580px;
+  }
+  .wrapper{
+	width: 75%;
+	float: right;
+	div{
+		margin: 1.33%!important;
+	}
+	.item-1, .item-5{
+		width: 68%!important;
+    	min-height: 150px!important;
+    	height: 20%!important;
+    	float: right;
+	}
+	.item-2, .item-4{
+		width: 27%!important;
+    	min-height: 375px!important;
+    	height: 44%!important;
+    	float: right;
+	}
+	.item-4, .item-5{
+		margin-top: -162px!important;
+	}
+	.item-1, .item-2{
+		float: left!important;
+	}
+  }
+}

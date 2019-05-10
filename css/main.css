@@ -1,0 +1,87 @@
+body {
+  background-color: #B7B7B7;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0px; }
+
+.header, .aside, .footer {
+  width: 100%;
+  position: relative;
+  background: #073763;
+  text-align: center;
+  color: white;
+  height: 70px;
+  display: flex; }
+  .header span, .aside span, .footer span {
+    display: flow-root;
+    margin: auto;
+    font-weight: bold;
+    font-size: 35px; }
+
+.aside {
+  position: relative;
+  background: #244E13;
+  z-index: 99; }
+
+.footer {
+  background: #660000; }
+
+.wrapper {
+  width: 100%;
+  position: relative;
+  height: auto;
+  z-index: 99; }
+  .wrapper div {
+    background: #2E2E2E;
+    display: flex;
+    color: white;
+    font-size: 20px;
+    float: left;
+    margin: 1.25%; }
+    .wrapper div span {
+      display: flow-root;
+      margin: auto;
+      font-weight: bold;
+      font-size: 35px; }
+    .wrapper div.item-1, .wrapper div.item-4 {
+      width: 27%;
+      min-height: 375px;
+      height: 44%; }
+    .wrapper div.item-2, .wrapper div.item-5 {
+      width: 68%;
+      min-height: 150px;
+      height: 20%; }
+    .wrapper div.item-3 {
+      width: 38%;
+      min-height: 200px;
+      height: 22%; }
+  .wrapper div:nth-child(even) {
+    float: right; }
+
+@media screen and (min-width: 601px) {
+  .aside {
+    width: 25%;
+    float: left;
+    min-height: 580px; }
+
+  .wrapper {
+    width: 75%;
+    float: right; }
+    .wrapper div {
+      margin: 1.33% !important; }
+    .wrapper .item-1, .wrapper .item-5 {
+      width: 68% !important;
+      min-height: 150px !important;
+      height: 20% !important;
+      float: right; }
+    .wrapper .item-2, .wrapper .item-4 {
+      width: 27% !important;
+      min-height: 375px !important;
+      height: 44% !important;
+      float: right; }
+    .wrapper .item-4, .wrapper .item-5 {
+      margin-top: -162px !important; }
+    .wrapper .item-1, .wrapper .item-2 {
+      float: left !important; } }
+
+/*# sourceMappingURL=main.css.map */
